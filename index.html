@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AchrafVision - Premium Prescription Glasses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AchrafVision</h1>
+            <p>See the world clearly</p>
+        </div>
+        <div class="med">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#glasses">Glasses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="language-switcher">
+                <button id="translate-ar" class="lang-btn" onclick="changeLanguage('ar')">العربية</button>
+                <button id="translate-fr" class="lang-btn" onclick="changeLanguage('fr')">Français</button>
+            </div>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Premium Prescription Glasses</h2>
+                <p>Customized for your vision needs</p>
+                <button class="btn">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="glasses" class="products">
+            <h2>Our Collection</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About OptiVision</h2>
+            <div class="about-content">
+                <p>We specialize in high-quality prescription glasses with the latest lens technology. All our frames come with a 1-year warranty and free adjustments.</p>
+                <img src="https://lunettespourtous.com/cdn/shop/files/Lunettes_Pour_Tous_Home2.webp?v=1737990746&width=1920" alt="Optician working">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Need Help?</h2>
+            <p>Contact our opticians for personalized advice</p>
+            <button class="btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </button>
+        </section>
+    </main>
+
+    <div class="order-modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Order Prescription Glasses</h2>
+            <form id="prescription-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="prescription">Prescription Details</label>
+                    <textarea id="prescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="frame">Selected Frame</label>
+                    <input type="text" id="frame" readonly>
+                </div>
+                <button type="submit" class="btn">Complete Order (20 DH)</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#glasses">Glasses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>+212 669-973483</p>
+                <p>contact@optivision.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 OptiVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
