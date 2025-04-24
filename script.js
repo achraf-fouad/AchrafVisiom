@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Product data with two images each (default and hover)
+    
     const products = [
         {
             id: 1,
